@@ -5,7 +5,7 @@
 body {
   background: url(https://media.giphy.com/media/l4FGE5EZOqikBWaqc/giphy.gif);
   background-repeat: repeat;
-  color: rgb(250, 253, 247);
+  color: rgb(191, 255, 247);
   font-family: 'Krona One', cursive;
 
   /** permet de centrer les éléments dans la page **/
@@ -43,8 +43,8 @@ h2{
 /** boutons **/
 .btn {
 	box-shadow:inset -6px -5px 0px -2px #5f0077;
-	background:linear-gradient(to bottom, #f300fc 5%,#981aff 100%);
-	background-color:#f374ff;
+    background:linear-gradient(to bottom, #77fff8 5%,#50bfff 100%);
+	background-color:#64c1ff;
 	border:5px solid#000000;
 	display:inline-block;
 	cursor:pointer;
@@ -54,11 +54,11 @@ h2{
 	font-weight:bold;
 	padding:5px 47px;
 	text-decoration:none;
-	text-shadow:3px 0px 0px#8a008a;
+	text-shadow:1px 0px 0px#af00af;
   
 }
 .btn:hover {
-	background:linear-gradient(to bottom, #ed61ff 1%, #68005a 100%);
+	background:linear-gradient(to bottom, #007ec7 1%, #4698e6 100%);
 	background-color:#68a54b;
 }
 .btn:active {
