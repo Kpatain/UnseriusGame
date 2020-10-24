@@ -1,12 +1,14 @@
   
-/** import de polices **/
-@import url(https://fonts.googleapis.com/css?family=Krona+One);
+/** polices **/
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
 
 body {
-  background: url(https://media.giphy.com/media/l4FGE5EZOqikBWaqc/giphy.gif);
-  background-repeat: repeat;
-  color: rgb(191, 255, 247);
-  font-family: 'Krona One', cursive;
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/debfab09-22c5-4345-a4cf-228002defab9/d8mokzb-1b7a5f7e-d322-436d-a48a-78427902bf1d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9kZWJmYWIwOS0yMmM1LTQzNDUtYTRjZi0yMjgwMDJkZWZhYjkvZDhtb2t6Yi0xYjdhNWY3ZS1kMzIyLTQzNmQtYTQ4YS03ODQyNzkwMmJmMWQuZ2lmIn1dXX0.VwnY1BCF3Dr6vvkJ6-OsXIvLkn7C5dPH4AR7oqDgDhw);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(27, 27, 27);
+  font-family: 'Space Mono', cursive;
 
   /** permet de centrer les éléments dans la page **/
   display: flex;
@@ -20,12 +22,12 @@ body {
 /** l'image fait toujours la même hauteur **/
 img{
   margin: 40px;
-  border: 10px solid #27cbfd;
-  padding: 10px;
+  border: 10px solid #ffffff;
+  padding: 0 px;
   height: 40vh;
   width: auto;
 }
-/** les titres ne sont pas trop grands **/
+/** Title size **/
 h1,h2{
   max-width: 800px;
   line-height: 1.5;
@@ -40,30 +42,32 @@ h2{
 }
 
 
-/** boutons **/
+/** Mon bouton **/
 .btn {
-	box-shadow:inset -6px -5px 0px -2px #5f0077;
-    background:linear-gradient(to bottom, #77fff8 5%,#50bfff 100%);
-	background-color:#64c1ff;
-	border:5px solid#000000;
+	box-shadow:inset 0px -1px 0px -50px #000000;
+	background:linear-gradient(to bottom, #d6d6d6 5%, #ffffff 100%);
+	background-color:#999999;
+	border-radius:3px;
+	border:1px solid #000000;
 	display:inline-block;
 	cursor:pointer;
-    color:#12447c;
-	font-family:"Krona One";
-	font-size:17px;
+	color:#000000;
+	font-family:"Space Mono";
+	font-size:16px;
 	font-weight:bold;
-	padding:5px 47px;
+	padding:2px 44px;
 	text-decoration:none;
-	text-shadow:1px 0px 0px#af00af;
-  
+	text-shadow:0px 0px 1px #ffffff;
 }
+  
+
 .btn:hover {
-	background:linear-gradient(to bottom, #007ec7 1%, #4698e6 100%);
-	background-color:#68a54b;
+	background:linear-gradient(to bottom, #ffffff 5%, #e6e6e6 100%);
+	background-color:#ffffff;
 }
 .btn:active {
 	position:relative;
-	top:1px;
+	top:5px;
 }
 /** liste de boutons **/
 .btns-list{
@@ -78,14 +82,14 @@ h2{
 
 
 
-/** faire bouger un peu tout ça **/
+/** Animation 1 **/
 h1,
 h2 {
   animation-name: fade-in;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
-/** faire clignotter le sous titre **/ 
+/** Clignottement du sous titre **/ 
 h2 {
   animation-iteration-count: infinite;
 }
@@ -99,9 +103,10 @@ h2 {
   }
 }
 
-/** une animation de très bon goût **/
+/** Animation d'origine inconnu et de fonction inconnu jusqu'à ce jour **/
 .yeah{
-  animation: yeah 3s ease-out;
+  animation: yeah;
+  animation-duration: 10s;
 }
 @keyframes yeah{
   0%{
