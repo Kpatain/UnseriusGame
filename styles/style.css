@@ -2,6 +2,7 @@
 /** polices **/
 @import url(https://fonts.googleapis.com/css?family=Space+Mono);
 
+
 body {
   background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/debfab09-22c5-4345-a4cf-228002defab9/d8mokzb-1b7a5f7e-d322-436d-a48a-78427902bf1d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9kZWJmYWIwOS0yMmM1LTQzNDUtYTRjZi0yMjgwMDJkZWZhYjkvZDhtb2t6Yi0xYjdhNWY3ZS1kMzIyLTQzNmQtYTQ4YS03ODQyNzkwMmJmMWQuZ2lmIn1dXX0.VwnY1BCF3Dr6vvkJ6-OsXIvLkn7C5dPH4AR7oqDgDhw);
   background-repeat: no-repeat;
@@ -80,6 +81,29 @@ h2{
   margin: 15px;
 }
 
+/** Signature **/
+.signature{
+  background-color: #222;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  top:0px;
+  box-shadow: 5px 5px 15px 5px #000000;
+  right: 20px;
+  width : 150px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.signature a{
+  font-family: Arial, Helvetica, sans-serif;
+  color : #f0f0f0;
+  text-decoration: none;
+  font-size: 10px;
+
+}
+
 
 
 /** Animation 1 **/
@@ -106,13 +130,25 @@ h2 {
 /** Animation d'origine inconnu et de fonction inconnu jusqu'à ce jour **/
 .yeah{
   animation: yeah;
-  animation-duration: 10s;
+  animation-duration: 0.9s;
 }
 @keyframes yeah{
-  0%{
-    transform:rotate(-600deg) scale(0) rotateY(180deg)
+  0% {
+    transform: translateY(-1200px) scale(0.7);
+    opacity: 0.7;
   }
-  100%{
-    transform: rotate(0deg) scale(1);
+
+  80% {
+    transform: translateY(0px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
+
+.backInDown {
+  animation-name: backInDown;
+  }
